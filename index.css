@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fdf6e3;
+    /* cream background */
+    display: flex;
+    justify-content: center;
+    /* horizontal center */
+    align-items: center;
+    /* vertical center */
+    min-height: 100vh;
+}
+
+.app {
+    width: 900px;
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input,
+.task-input select {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.task-input button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+}
+
+.board-layout {
+    display: flex;
+    gap: 15px;
+}
+
+.sidebar {
+    width: 180px;
+    background: #fefae0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.board {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.column {
+    background: #fffdf5;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.task-title {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.card button {
+    width: 100%;
+    margin-top: 6px;
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 6px;
+}
+
+.status {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status-todo {
+    color: #2563eb;
+}
+
+.status-inprogress {
+    color: #f59e0b;
+}
+
+.status-done {
+    color: #16a34a;
+}
+
+.priority-high {
+    border-left: 4px solid red;
+}
+
+.priority-medium {
+    border-left: 4px solid orange;
+}
+
+.priority-low {
+    border-left: 4px solid green;
+}
+
+
+/* Circular Progress Graph */
+
+.progress-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 10px auto 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-inner {
+    width: 80px;
+    height: 80px;
+    background: #fefae0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
